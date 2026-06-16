@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | BMW</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="logobmw.jpg" alt="BMW"> BMW
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Modelos</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page-header">
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>Agenda tu test drive o solicita informacion</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <article class="col-lg-7">
+            <h2 class="section-title">Solicita informacion</h2>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" class="form-control">
+                <div id="nombre-error" class="error-message">Minimo 3 caracteres.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email">Email *</label>
+                <input type="email" id="email" class="form-control">
+                <div id="email-error" class="error-message">Email no valido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="telefono">Telefono *</label>
+                <input type="tel" id="telefono" class="form-control">
+                <div id="telefono-error" class="error-message">Minimo 7 digitos.</div>
+              </div>
+              <div class="mb-3">
+                <label for="asunto">Modelo de interes *</label>
+                <input type="text" id="asunto" class="form-control" placeholder="Ej: BMW X5, Serie 3">
+                <div id="asunto-error" class="error-message">Minimo 5 caracteres.</div>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" class="form-control" rows="5" placeholder="Quiero agendar test drive..."></textarea>
+                <div id="mensaje-error" class="error-message">Minimo 10 caracteres.</div>
+              </div>
+              <button type="submit" class="btn btn-accent">Enviar solicitud</button>
+              <div id="formFeedback" class="d-none"></div>
+            </form>
+          </article>
+          <aside class="col-lg-5">
+            <div class="sidebar-box">
+              <h3 class="h5">Concesionario BMW</h3>
+              <p>Email: info@bmw-concesionario.com</p>
+              <p>Telefono: +591 73551602</p>
+              <p>Direccion: Av. San Francisco, CDMX</p>
+              <p>Horario: Lun - Sab, 9:00 - 20:00</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>BMW</h5>
+          <p>Portal informativo sobre autos BMW.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Modelos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p>info@bmw-concesionario.com</p>
+          <p>+591 73551602</p>
+        </div>
+      </div>
+      <p class="text-center mt-4 mb-0 small">&copy; 2026 BMW Portal</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

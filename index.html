@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | BMW</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="logobmw.jpg" alt="BMW"> BMW
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Modelos</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="BMW Serie 3.jpg" class="d-block w-100" alt="BMW Serie 3">
+            <div class="carousel-caption">
+              <h2>BMW Serie 3</h2>
+              <p>Deportividad y elegancia en cada kilometro</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="bmw-x5-l-01.jpg" class="d-block w-100" alt="BMW X5">
+            <div class="carousel-caption">
+              <h2>BMW X5</h2>
+              <p>El SUV que redefine el lujo y la potencia</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="BMW i4.jpg" class="d-block w-100" alt="BMW i4">
+            <div class="carousel-caption">
+              <h2>BMW i4</h2>
+              <p>Movilidad electrica con alma deportiva</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title fade-in">Nuestros Modelos</h2>
+        <div class="row g-4">
+          <article class="col-md-4">
+            <div class="card card-service h-100">
+              <div class="card-body text-center">
+                <h3 class="h5">Sedanes</h3>
+                <p class="card-text">Serie 3, Serie 5 y Serie 7. Lujo y rendimiento.</p>
+                <a href="servicios.html" class="btn btn-outline-primary btn-sm">Ver modelos</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card card-service h-100">
+              <div class="card-body text-center">
+                <h3 class="h5">SUV</h3>
+                <p class="card-text">X1, X3, X5 y X7. Espacio, confort y traccion total.</p>
+                <a href="servicios.html" class="btn btn-outline-primary btn-sm">Ver modelos</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card card-service h-100">
+              <div class="card-body text-center">
+                <h3 class="h5">Electricos</h3>
+                <p class="card-text">i4, iX e i7. El futuro de la conduccion premium.</p>
+                <a href="servicios.html" class="btn btn-outline-primary btn-sm">Ver modelos</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <h2 class="section-title">BMW en numeros</h2>
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="stat-card">
+                  <div class="stat-number" data-contador="108" data-sufijo="">0</div>
+                  <small class="text-muted">Años de historia</small>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-card">
+                  <div class="stat-number" data-contador="40" data-sufijo="+">0</div>
+                  <small class="text-muted">Modelos</small>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-card">
+                  <div class="stat-number" data-contador="140" data-sufijo="+">0</div>
+                  <small class="text-muted">Paises</small>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-card">
+                  <div class="stat-number" data-contador="2" data-sufijo="M+">0</div>
+                  <small class="text-muted">Autos vendidos al año</small>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-accent btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#infoModal">
+              Descubre la experiencia BMW
+            </button>
+          </div>
+          <aside class="col-lg-4">
+            <div class="sidebar-box">
+              <h3 class="h5">¿Por que BMW?</h3>
+              <ul>
+                <li>Ingenieria alemana de precision</li>
+                <li>Tecnologia iDrive de ultima generacion</li>
+                <li>Red de servicio autorizado</li>
+                <li>Financiamiento y garantia extendida</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="infoModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5">The Ultimate Driving Machine</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>BMW combina rendimiento, diseno y tecnologia para ofrecer la mejor experiencia de conduccion.</p>
+          <ul>
+            <li>Test drive sin compromiso</li>
+            <li>Planes de mantenimiento BMW Service</li>
+            <li>Asesoria personalizada en concesionario</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="contacto.html" class="btn btn-accent">Agendar cita</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>BMW</h5>
+          <p>Portal informativo sobre autos BMW. The Ultimate Driving Machine.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Modelos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p>info@bmw-concesionario.com</p>
+          <p>+591 73551602</p>
+        </div>
+      </div>
+      <p class="text-center mt-4 mb-0 small">&copy; 2026 BMW Portal</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
